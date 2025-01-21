@@ -39,6 +39,7 @@ button {
   transition: all ease-in-out 0.3s;
   background-color: var(--btn-bg);
   color: var(--btn-color);
+  border-width: 4px;
   border-image: linear-gradient(
       115deg,
       var(--grad-color1),
