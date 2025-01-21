@@ -53,6 +53,7 @@ button {
 
 button:hover {
   transform: scale(1.2);
+  color: var(--btn-color-hover);
   border-image: linear-gradient(
       115deg,
       var(--grad-color3),
