@@ -1,0 +1,50 @@
+:root {
+  --search-border: #bbb;
+  --search-focus-border: #3a71ca;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem;
+}
+
+.hide {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.search-bar {
+  width: 30%;
+  padding: 1rem 2rem;
+  border: 4px solid var(--search-border);
+  outline: none;
+  transition: all ease-in-out 0.3s;
+  font-size: 1.5rem;
+}
+
+.search-bar:focus {
+  width: 100%;
+  border-color: var(--search-focus-border);
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
